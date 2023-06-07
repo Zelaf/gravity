@@ -110,7 +110,7 @@ test-local:
 	$(eval TEST_FLAGS := -v -shuffle=on -failfast)
 
 test:
-	export BOOTSTRAP_ROLES="dns;dhcp;api;discovery;backup;debug;tsdb"
+	export BOOTSTRAP_ROLES="dns;dhcp;api;discovery;backup;debug;tsdb;tftp"
 	export ETCD_ENDPOINT="localhost:2379"
 	export DEBUG="true"
 	export LISTEN_ONLY="true"
